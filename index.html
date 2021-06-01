@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f6f56dda56.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <title>Christopher Esparza</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
         <div class="max-width">
             <div class="logo"><a href="#">Portafo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Mi</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -31,7 +32,7 @@
             <div class="home-content">
                 <div class="text-1">Mi nombre es</div>
                 <div class="text-2">Christopher Esparza</div>
-                <div class="text-3">Y soy <span>desarrollador</span></div>
+                <div class="text-3">Y soy <span class="typing"></span></div>
 
             </div>
         </div>
@@ -47,13 +48,148 @@
                     <img src="img/20210527_202537.jpg (1).png" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Christopher Esparza: <span>desarrollador</span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate in veniam ut consequatur assumenda, at laboriosam? Error odio magni harum excepturi, similique ipsam consequuntur sapiente? Illo repudiandae magni, perferendis molestias fugit vitae doloribus libero sit delectus dolores suscipit numquam voluptatem atque quibusdam, quam animi nihil! A repudiandae ipsam voluptatum modi dicta et, blanditiis illum possimus harum, quia placeat perspiciatis eos.</p>
-                    <a href="#">Descargar CV</a>
+                    <div class="text">Christopher Esparza: <span class="typing2"></span></div>
+                    <p>Soy estudiante en ultimos semestres de la carrera, una persona apasionada por el conocimiento y de siempre tratar de mejorar procesos cotidianos,
+                        se que contratar a una persona sin experiencia laboral es una apuesta muy ariesgada, pero pienso que puedo valerme de mis conocimientos adquiridos 
+                        tanto por la escuela como por mis cursos para sobrepasar la barrera de la experiencia y llegar exponencial a lo mas alto que pueda, como todas las
+                        cosas grandes empiezan pequeñas y una oportunidad para dar el primer paso es lo que necesito.
+                    </p>
+                    <a href="ChristopherEsparzaCV.pdf">Descargar CV</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- skill section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="tittle">Habilidades</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My experiencia</div>
+                    <p>Como desarrollador solo he realizado proyectos por mi cuenta y para la escuela, como puede verse esta pagina esta hecha con html, css y JS puros pero 
+                        tambien he realizado proyectos con el framework de Angular con html, css, boostrap5 y algunas herramientas mas,
+                        por la parte de backend he creado api rest con NodeJS, Express y varias tecnologias mas, estas apis las consumo desde
+                        mis proyectos usando peticiones https.
+                    </p>
+                    <br/>
+                    <p>Por otra parte he trabajado mayormente como capacitador o entrenador de personal lo por lo cual el comunicarme y el trabajo en equipo no es ningun 
+                        problema para mi, por esta misma razon es que, se manejar el estres o trabajar bajo presion.
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTLM</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Angular</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>NODEJS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line node"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="tittle">Contacto</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Contactame</div>
+                    <p>Si quieres contactarme los metodos para hacerlo estan en la parte de abajo o puedes madarme un correo desde 
+                        aqui mismo y yo con mucho gusto contestare lo mas pronto posible.
+                    </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nombre</div>
+                                <div class="sub-tittle">Christopher Daniel Esparza Contreras</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-home"></i>
+                            <div class="info">
+                                <div class="head">Direccion</div>
+                                <div class="sub-tittle">Guadalajara, Jalisco</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Correo</div>
+                                <div class="sub-tittle">christopher.esparza.contreras@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="info">
+                                <div class="head">Telefono</div>
+                                <div class="sub-tittle">(52) 3325441657</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Manda mensaje</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="text" placeholder="Correo" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Sujeto" required>
+                        </div>
+                        <div class="field textArea">
+                            <textarea cols="30" rows="10" placeholder="Escribe el mensaje.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer>
+        <span>Creado por <a href="#">Christopher Esparza</a> | <span class="far fa-copyright"></span> 2021 todos los derechos resrvados.</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
