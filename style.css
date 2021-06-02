@@ -133,7 +133,6 @@ section .tittle::before{
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    color: forestgreen;
     font-size: 27px;
     margin: 5px 0;
 }
@@ -407,7 +406,6 @@ footer span a:hover{
         margin: auto 0 auto 0px;
     }
     .home .home-content .text-1{
-        color: red;
         font-size: 20px;
     }
     .home .home-content .text-2{
