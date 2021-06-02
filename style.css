@@ -107,9 +107,7 @@ section .tittle::before{
     cursor: pointer;
     display: none;
 }
-.menu-btn:hover{
-    color: rgb(16, 92, 192);
-}
+
 /* home section */
 .home{
     display: flex;
