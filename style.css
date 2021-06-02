@@ -303,7 +303,7 @@ section .tittle::before{
 }
 .contact .contact-content .left .info{ 
     margin: 0 0 8px 12px;
-    font-size: 15px;
+    font-size: 12px;
 }
 .contact .contact-content .left .head{
     font-weight: 700;
@@ -391,7 +391,7 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu .active{
+    .navbar .menu.active{
         left: 0;
     }
     .navbar .menu li{
