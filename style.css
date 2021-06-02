@@ -133,6 +133,7 @@ section .tittle::before{
     margin-left: -3px;
 }
 .home .home-content .text-3{
+    color: forestgreen;
     font-size: 27px;
     margin: 5px 0;
 }
