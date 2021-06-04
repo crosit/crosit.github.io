@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/f6f56dda56.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" type="text/javascript"></script>
+    
     <title>Christopher Esparza</title>
 </head>
 <body>
@@ -49,10 +51,11 @@
                 </div>
                 <div class="column right">
                     <div class="text">Christopher Esparza: <span class="typing2"></span></div>
-                    <p>Soy estudiante en ultimos semestres de la carrera, una persona apasionada por el conocimiento y de siempre tratar de mejorar procesos cotidianos,
-                        se que contratar a una persona sin experiencia laboral es una apuesta muy ariesgada, pero pienso que puedo valerme de mis conocimientos adquiridos 
-                        tanto por la escuela como por mis cursos para sobrepasar la barrera de la experiencia y llegar exponencial a lo mas alto que pueda, como todas las
-                        cosas grandes empiezan pequeñas y una oportunidad para dar el primer paso es lo que necesito.
+                    <p>Soy estudiante en últimos semestres de la carrera, una persona apasionada por el conocimiento y de siempre 
+                        tratar de mejorar procesos cotidianos, sé que contratar a una persona sin experiencia laboral es una apuesta 
+                        muy arriesgada, pero pienso que puedo valerme de mis conocimientos adquiridos tanto por la escuela como por 
+                        mis cursos para sobrepasar la barrera de la experiencia y llegar exponencial a lo más alto que pueda, como 
+                        todas las cosas grandes empiezan pequeñas y una oportunidad para dar el primer paso es lo que necesito.
                     </p>
                     <a href="ChristopherEsparzaCV.pdf">Descargar CV</a>
                 </div>
@@ -65,15 +68,15 @@
             <h2 class="tittle">Habilidades</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My experiencia</div>
-                    <p>Como desarrollador solo he realizado proyectos por mi cuenta y para la escuela, como puede verse esta pagina esta hecha con html, css y JS puros pero 
-                        tambien he realizado proyectos con el framework de Angular con html, css, boostrap5 y algunas herramientas mas,
-                        por la parte de backend he creado api rest con NodeJS, Express y varias tecnologias mas, estas apis las consumo desde
-                        mis proyectos usando peticiones https.
+                    <div class="text">Mi experiencia</div>
+                    <p>Como desarrollador solo he realizado proyectos por mi cuenta y para la escuela, como puede verse esta página está hecha 
+                        con html, css y JS puros, pero también he realizado proyectos con el framework de Angular con html, css, boostrap5 y algunas 
+                        herramientas más, por la parte de backend he creado 
+                        api Rest con NodeJS, Express y varias tecnologías más, estas Apis las consumo desde mis proyectos usando peticiones https. 
                     </p>
                     <br/>
-                    <p>Por otra parte he trabajado mayormente como capacitador o entrenador de personal lo por lo cual el comunicarme y el trabajo en equipo no es ningun 
-                        problema para mi, por esta misma razon es que, se manejar el estres o trabajar bajo presion.
+                    <p>Por otra parte, he trabajado mayormente como capacitador o entrenador de personal, por lo cual el comunicarme y el trabajo en equipo no es 
+                        ningún problema para mí, por esta misma razón se manejar el estrés o trabajar bajo presión. 
                     </p>
                     <a href="#">Leer mas</a>
                 </div>
@@ -125,8 +128,8 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Contactame</div>
-                    <p>Si quieres contactarme los metodos para hacerlo estan en la parte de abajo o puedes madarme un correo desde 
-                        aqui mismo y yo con mucho gusto contestare lo mas pronto posible.
+                    <p>Si quieres contactarme los métodos para hacerlo están en la parte de abajo o puedes mandarme un 
+                        correo desde aquí mismo y yo con mucho gusto contestare lo más pronto posible. 
                     </p>
                     <div class="icons">
                         <div class="row">
@@ -161,23 +164,26 @@
                 </div>
                 <div class="column right">
                     <div class="text">Manda mensaje</div>
-                    <form action="#">
+                    <form action="">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="name" required>
+                                <input type="text" placeholder="name" id="from_name" required>
                             </div>
                             <div class="field email">
-                                <input type="text" placeholder="Correo" required>
+                                <input type="text" placeholder="Correo" id="from_email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Sujeto" required>
+                            <input type="text" placeholder="Asunto" id="asunto" required>
                         </div>
                         <div class="field textArea">
-                            <textarea cols="30" rows="10" placeholder="Escribe el mensaje.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Escribe el mensaje.." id="message" required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Enviar</button>
+                            <button onclick="sendMail()">Enviar</button>
+                        </div>
+                        <div id="send" >
+                            <p>Su mensaje fue enviado</p>
                         </div>
                     </form>
                 </div>
