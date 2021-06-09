@@ -265,6 +265,35 @@ section .tittle::before{
     color:rgb(16, 92, 192);
     background: none;
 }
+/* gallery section */
+/* .gallery .tittle{
+    color: white;
+}
+.gallery .tittle::after{
+    content: "lo que hago";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    left: 50%;
+    color: rgb(16, 92, 192);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.gallery .tittle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+.gallery {
+    background: black;
+} */
+
 /* contact section */
 
 .contact .contact-content{
@@ -407,7 +436,6 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    
     .home .max-width{
         margin: auto 0 auto 0px;
     }
